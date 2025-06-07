@@ -4,9 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import { getDistance } from 'geolib';
 import './App.css';
 import { paymentPoints } from './data/points';
-import logo from './assets/al.jpg'; // Logo dosyasını içe aktar
+import logo from './assets/al.jpg'; 
 
-// Haritayı filtrelenmiş marker'ların sınırlarına odaklayan bileşen
 function MapBounds({ points }) {
   const map = useMap();
 
@@ -29,7 +28,6 @@ function App() {
   const [userLocation, setUserLocation] = useState(null);
   const [nearestPoint, setNearestPoint] = useState(null);
 
-  // Dinamik filtre seçenekleri
   const cities = [...new Set(paymentPoints.map((point) => point.city))].sort();
   const districts = [...new Set(paymentPoints.map((point) => point.district))].sort();
   const types = [...new Set(paymentPoints.map((point) => point.type))].sort();

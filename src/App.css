@@ -44,22 +44,22 @@
   color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
-  align-items: center; /* Dikey hizalama */
-  gap: 405px; /* Logo ile içerik arasında boşluk */
+  align-items: center;
+  gap: 405px; 
   
 }
 
 .nearest-point-logo {
-  width: 150px; /* Logo boyutu */
+  width: 150px; 
   height: 75px;
-  object-fit: cover; /* Resmi ölçeklendirme */
-  border-radius: 38px; /* Yuvarlatılmış köşeler */
-  margin-left: 30px; /* Sol kenardan boşluk */
+  object-fit: cover; 
+  border-radius: 38px; 
+  margin-left: 30px; 
 }
 
 .nearest-point-content {
-  flex: 1; /* İçeriğin kalan alanı kaplaması */
-  text-align: left; /* İçeriği sola hizala */
+  flex: 1; 
+  text-align: left; 
 }
 
 .nearest-point h3 {
@@ -80,7 +80,7 @@
   color: #ffeaa7;
 }
 
-/* Leaflet popup stilleri */
+
 .leaflet-popup-content-wrapper {
   background-color: #000303;
   color: #ffffff;
